@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        .box {
+        width: 200px;
+        height: 200px;
+        background-color: #f0f0f0;
+        border: 2px solid #ccc;
+        text-align: center;
+        line-height: 200px;
+        transition: background-color 0.3s ease;
+    }
+    /* CSS to style the box when hovered */
+    .box:hover {
+        background-color: #ddd;
+    }
+    </style>
+</head>
+<body>
+   <h3> events</h3>
+   <button id="myButton"> Click Me</button>
+
+   <div class="box" onmouseover="changeColor()">Hover over me</div>
+
+
+   <script>
+    var button = document.getElementById("myButton");
+
+    // Attention an event
+    button.addEventListener("click", handleclick);
+
+    // Eveny handler function
+    function handleclick(){
+        alert("button Clicked")
+    }
+
+    function changeColor() {
+        document.querySelector('.box').style.backgroundColor = 'lightblue';
+    }
+   </script>
+</body>
+</html>

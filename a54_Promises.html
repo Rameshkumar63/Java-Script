@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <p>Promises</p>
+   
+    <script>
+        // let promise = new Promise(function(resolve,reject){
+        //     resolve(56)
+        // })
+
+        // console.log("Hello One")
+        // setTimeout(function(){
+        //     console.log("Hello Two in seconds")
+        // }, 2000)
+
+        // console.log("My Hello is + Hello Three")
+        // console.log(promise)
+
+        let p = new Promise((resolve, reject) => {
+            console.log("promise pending")
+            console.log(" I am promise And I an fullifilled")
+            reject(new Error(" I am error"))
+        },50000)
+
+        console.log(p);
+
+    </script>
+
+    
+</body>
+</html>

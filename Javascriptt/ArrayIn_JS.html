@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in Html</title>
+</head>
+<body>
+    <h3>Array are cvariable Which hold the more than one value  </h3>
+
+    <script>
+
+        const car = ["Farrai", "BMW", "Audi", "Land Rover"];
+        // 1 itterate array
+        for(let i=0; i<car.length; i++){
+            console.log(car[i]);
+        }
+
+        // converting array to a String
+        console.log(car.toString());
+
+        // length
+        console.log(car.length);  // 4
+
+        // accessing first array 
+        let car1 = car[0];
+        console.log(car1);
+
+        // accssing the last element
+        let car2 = car[car.length-1]
+        console.log(car2);
+
+        // adding rray element
+        car.push("ToyoTo");
+        console.log(car)
+
+        /* The Difference Between Arrays and Objects
+         In JavaScript, arrays use numbered indexes.  
+
+         In JavaScript, objects use named indexes.*/
+
+         // Create an array with 40 undefined elements:
+         const points = new Array(40); 
+         
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Jay  shree ram </h3>
+
+    <script>
+        // print hello world using function
+        function displayHello(){
+            console.log("Hello World ")
+        }
+        displayHello();
+
+        // write a function return square of a number
+        function SquareNumber(num){
+            return num * num;
+        }
+        console.log(SquareNumber(2));
+        console.log(SquareNumber(4));
+
+        // area of recentangle
+        function areaRecentangle(a, b){
+            return a*b;
+        }
+        console.log("areaRecentangle= "+areaRecentangle(5,5));
+        
+        // reverse a number in java
+        function numberReverse(num) {
+    let rev = 0;
+    while (num !== 0) {
+        rev = rev * 10 + num % 10;
+        num = Math.floor(num / 10);
+    }
+    return rev;
+}
+
+console.log(numberReverse(123)); // Output will be 321
+
+
+// count vowel of string 
+
+function CountVowel(str){
+    var coiunt =0;
+    str = str.toLoCase();
+    for(var i=0; i<str.lenght; i++){
+        if(str.charAt(i)=="a"||str.charAt(i)=="e"||str.charAt(i)=="i"||
+       str.charAt(i)=="o"||str.charAt(i)=="u"){
+        count++;
+       }
+    }
+    return count;
+}
+console.log(CountVowel("Hello"))
+console.log(CountVowel("Umbrella"));
+
+
+
+
+
+    </script>
+</body>
+</html>
